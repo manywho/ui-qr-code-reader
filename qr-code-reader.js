@@ -36,7 +36,7 @@
 
                     // If we have an outcome, grab the first and immediately navigate down that path
                     if (outcomes != null &&
-                        outcomes.size > 0) {
+                        outcomes.length > 0) {
                         var outcome = manywho.model.getOutcome(outcomes[0].id, flowKey);
 
                         manywho.engine.move(outcome, flowKey);
